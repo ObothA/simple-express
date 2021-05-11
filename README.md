@@ -11,8 +11,10 @@
 }
 ```
 
+
 ### GET ALL PERSONS [REQUEST TYPE : GET]
 `GET` `{{ BASE_URL }}` `api/v1/persons`
+> Sample Response
 ```
 {
     "message": "Request Successful.",
@@ -30,3 +32,33 @@
 
 ### GET SINGLE PERSON [REQUEST TYPE : GET]
 `GET` `{{ BASE_URL }}` `api/v1/persons/:id`
+> Sample Response
+```
+{
+    "message": "Request Successful.",
+    "data": {
+        "_id": "XXXXXXXXXXXXXXXXX",
+        "name": "Oboth Abel",
+        "email": "oboth.abel.oa@gmail.com",
+        "country": "Uganda",
+        "__v": 0
+    }
+}
+```
+
+### CREATE A PERSON [REQUEST TYPE : POST]
+`POST` `{{ BASE_URL }}` `api/v1/persons`
+> Sample Response
+```
+{
+    "message": "Person Successfully added.",
+    "data": {
+        "_id": "XXXXXXXXXXXXXXXXX",
+        "name": "Oboth Abel",
+        "email": "k@k.com",
+        "country": "Uganda",
+        "__v": 0
+    }
+}
+```
+

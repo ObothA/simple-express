@@ -40,3 +40,19 @@ exports.getPerson = asyncHandler(async (req, res, next) => {
     data: person
   });
 });
+
+/**
+ * @description Add a  person
+ * @param {*} req
+ * @param {*} res
+ * @route POST /api/v1/persons
+ * @access Public
+ */
+exports.addPerson = asyncHandler(async (req, res) => {
+  const person = await Person.create(req.body);
+
+  res.status(200).json({
+    message: 'Person Successfully added.',
+    data: person
+  });
+});

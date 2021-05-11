@@ -3,15 +3,14 @@ const express = require('express');
 const {
   getPersons,
   getPerson,
-  // createBootcamp,
+  addPerson,
   // updateBootcamp,
   // deleteBootcamp,
 } = require('../controllers/persons');
 
 const router = express.Router();
 
-router.route('/').get(getPersons)
-// .post(createBootcamp);
+router.route('/').get(getPersons).post(addPerson);
 
 router.route('/:id')
   .get(getPerson)

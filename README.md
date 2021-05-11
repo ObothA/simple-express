@@ -50,7 +50,7 @@
 ### CREATE A PERSON [REQUEST TYPE : POST] 
 `POST` `{{ BASE_URL }}` `api/v1/persons` 
 > Dont forget to set header `Content-Type: application/json`
-<br/>
+  
 > Sample Response
 ```
 {

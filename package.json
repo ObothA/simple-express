@@ -1,5 +1,35 @@
 {
+  "name": "simple-express-api",
+  "version": "1.0.0",
+  "description": "Zuri Simple API",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ObothA/simple-express.git"
+  },
+  "keywords": [
+    "api",
+    "express"
+  ],
+  "author": "Oboth Abel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ObothA/simple-express/issues"
+  },
   "devDependencies": {
-    "eslint": "^7.26.0"
+    "eslint": "^7.26.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.8",
+    "morgan": "^1.10.0"
   }
 }

@@ -11,10 +11,11 @@
 }
 ```
 
-
-### GET ALL PERSONS [REQUEST TYPE : GET]
-`GET` `{{ BASE_URL }}` `api/v1/persons`
-> Sample Response
+<br/>
+<br/>
+### GET ALL PERSONS [REQUEST TYPE : GET] <br/>
+`GET` `{{ BASE_URL }}` `api/v1/persons` <br/>
+> Sample Response <br/>
 ```
 {
     "message": "Request Successful.",
@@ -29,10 +30,10 @@
     ]
 }
 ```
-
-### GET SINGLE PERSON [REQUEST TYPE : GET]
-`GET` `{{ BASE_URL }}` `api/v1/persons/:id`
-> Sample Response
+<br/>
+### GET SINGLE PERSON [REQUEST TYPE : GET]<br/>
+`GET` `{{ BASE_URL }}` `api/v1/persons/:id`<br/>
+> Sample Response<br/>
 ```
 {
     "message": "Request Successful.",
@@ -46,10 +47,10 @@
 }
 ```
 
-### CREATE A PERSON [REQUEST TYPE : POST]
-`POST` `{{ BASE_URL }}` `api/v1/persons`
-> Dont forget to set header `Content-Type: application/json`
-> Sample Response
+### CREATE A PERSON [REQUEST TYPE : POST] <br/>
+`POST` `{{ BASE_URL }}` `api/v1/persons` <br/>
+> Dont forget to set header `Content-Type: application/json` <br/>
+> Sample Response <br/>
 ```
 {
     "message": "Person Successfully added.",
@@ -63,16 +64,17 @@
 }
 ```
 
-### UPDATE A PERSON [REQUEST TYPE : PUT]
-`PUT` `{{ BASE_URL }}` `api/v1/persons`
-> Dont forget to set header `Content-Type: application/json`
-> Sample Request Body
+### UPDATE A PERSON [REQUEST TYPE : PUT] <br/>
+`PUT` `{{ BASE_URL }}` `api/v1/persons` <br/>
+> Dont forget to set header `Content-Type: application/json` <br/>
+> Sample Request Body <br/>
 ```
 {
     "name": "Abel Oboth"
 }
-```
-> Sample Response
+``` 
+<br/>
+> Sample Response <br/>
 ```
 {
     "message": "Person Successfully updated.",

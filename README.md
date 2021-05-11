@@ -3,9 +3,8 @@
 
 > BASE_URL = `http://localhost:5000/`
 
-### GET ALL PERSONS
-> REQUEST `GET`
-`{{ BASE_URL }} api/v1/persons`
+### GET ALL PERSONS [GET REQUEST TYPE: GET]
+`GET` `{{ BASE_URL }}` `api/v1/persons`
 
-### GET SINGLE PERSON
+### GET SINGLE PERSON [GET REQUEST TYPE: GET]
 `GET` `{{ BASE_URL }}` `api/v1/persons/:id`

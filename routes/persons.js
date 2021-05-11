@@ -4,7 +4,7 @@ const {
   getPersons,
   getPerson,
   addPerson,
-  // updateBootcamp,
+  updatePerson,
   // deleteBootcamp,
 } = require('../controllers/persons');
 
@@ -14,7 +14,7 @@ router.route('/').get(getPersons).post(addPerson);
 
 router.route('/:id')
   .get(getPerson)
-//   .put(updateBootcamp)
+  .put(updatePerson)
 //   .delete(deleteBootcamp);
 
 module.exports = router;

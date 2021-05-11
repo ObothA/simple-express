@@ -48,6 +48,7 @@
 
 ### CREATE A PERSON [REQUEST TYPE : POST]
 `POST` `{{ BASE_URL }}` `api/v1/persons`
+> Dont forget to set header `Content-Type: application/json`
 > Sample Response
 ```
 {
@@ -60,5 +61,27 @@
         "__v": 0
     }
 }
+```
+
+### UPDATE A PERSON [REQUEST TYPE : PUT]
+`PUT` `{{ BASE_URL }}` `api/v1/persons`
+> Dont forget to set header `Content-Type: application/json`
+> Sample Request Body
+```
+{
+    "name": "Abel Oboth"
+}
+```
+> Sample Response
+```
+{
+    "message": "Person Successfully updated.",
+    "data": {
+        "_id": "609ad6b54a31664f2c13f123",
+        "name": "Abel Oboth",
+        "email": "oboth.abel.oa@gmail.com",
+        "country": "Uganda",
+        "__v": 0
+    }
 ```
 

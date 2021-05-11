@@ -56,3 +56,53 @@ exports.addPerson = asyncHandler(async (req, res) => {
     data: person
   });
 });
+
+/**
+ * @description Update a person
+ * @param {*} req
+ * @param {*} res
+ * @route PUT /api/v1/persons/:id
+ * @access Public
+ */
+exports.updatePerson = asyncHandler(async (req, res, next) => {
+  const person = await Person.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true,
+  });
+
+  if (!person) {
+    return next(
+      new ErrorResponse(`Person not found with id of ${req.params.id}`, 404)
+    );
+  }
+
+  res.status(200).json({
+    message: 'Person Successfully updated.',
+    data: person
+  });
+});
+
+/**
+ * @description Delete bootcamp
+ * @param {*} req
+ * @param {*} res
+ * @route DELETE /api/v1/bootcamps/:id
+ * @access Private
+ */
+exports.deleteBootcamp = asyncHandler(async (req, res, next) => {
+  const bootcamp = await Bootcamp.findById(req.params.id);
+
+  if (!bootcamp) {
+    return next(
+      new ErrorResponse(`Bootcamp not found with id of ${req.params.id}`, 404)
+    );
+  }
+
+  // This method triggers our "pre" middleware
+  bootcamp.remove();
+
+  res.status(200).json({
+    success: true,
+    data: {},
+  });
+});

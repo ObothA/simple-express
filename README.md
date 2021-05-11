@@ -8,5 +8,4 @@
 `{{ BASE_URL }} api/v1/persons`
 
 ### GET SINGLE PERSON
-> REQUEST `GET`
-`{{ BASE_URL }} api/v1/persons/:id`
+`GET` `{{ BASE_URL }} api/v1/persons/:id`

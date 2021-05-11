@@ -5,7 +5,7 @@ const {
   getPerson,
   addPerson,
   updatePerson,
-  // deleteBootcamp,
+  deletePerson,
 } = require('../controllers/persons');
 
 const router = express.Router();
@@ -15,6 +15,6 @@ router.route('/').get(getPersons).post(addPerson);
 router.route('/:id')
   .get(getPerson)
   .put(updatePerson)
-//   .delete(deleteBootcamp);
+  .delete(deletePerson);
 
 module.exports = router;

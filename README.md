@@ -66,7 +66,7 @@
 ```
 
 ### UPDATE A PERSON [REQUEST TYPE : PUT]
-`PUT` `{{ BASE_URL }}` `api/v1/persons`
+`PUT` `{{ BASE_URL }}` `api/v1/persons/:id`
 <br/>
 > Dont forget to set header `Content-Type: application/json`
 
@@ -87,6 +87,18 @@
         "email": "oboth.abel.oa@gmail.com",
         "country": "Uganda",
         "__v": 0
-    }
+}
+```
+
+### DELETE A PERSON [REQUEST TYPE : DELETE]
+`DELETE` `{{ BASE_URL }}` `api/v1/persons/:id`
+  
+
+> Sample Response
+```
+{
+    "message": "Person Removed.",
+    "data": {}
+}
 ```
 

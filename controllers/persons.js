@@ -83,26 +83,26 @@ exports.updatePerson = asyncHandler(async (req, res, next) => {
 });
 
 /**
- * @description Delete bootcamp
+ * @description Delete person
  * @param {*} req
  * @param {*} res
- * @route DELETE /api/v1/bootcamps/:id
+ * @route DELETE /api/v1/persons/:id
  * @access Private
  */
-exports.deleteBootcamp = asyncHandler(async (req, res, next) => {
-  const bootcamp = await Bootcamp.findById(req.params.id);
+exports.deletePerson = asyncHandler(async (req, res, next) => {
+  const person = await Person.findById(req.params.id);
 
-  if (!bootcamp) {
+  if (!person) {
     return next(
-      new ErrorResponse(`Bootcamp not found with id of ${req.params.id}`, 404)
+      new ErrorResponse(`Person not found with id of ${req.params.id}`, 404)
     );
   }
 
-  // This method triggers our "pre" middleware
-  bootcamp.remove();
+  // This method triggers "pre" middleware
+  person.remove();
 
   res.status(200).json({
-    success: true,
-    data: {},
+    message: 'Person Removed.',
+    data: {}
   });
 });

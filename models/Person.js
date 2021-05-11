@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 const PersonSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: [true, 'Please add a name.'],
+    required: [true, 'Please add a name'],
     trim: true,
-    maxlength: [50, 'Name can not be longer than 50 characters.']
+    maxlength: [50, 'Name can not be longer than 50 characters']
   },
   email: {
     type: String,
@@ -18,9 +18,9 @@ const PersonSchema = new mongoose.Schema({
   },
   country: {
     type: String,
-    required: [true, 'Please add a country.'],
+    required: [true, 'Please add a country'],
     trim: true,
-    maxlength: [100, 'Name can not be longer than 100 characters.']
+    maxlength: [100, 'Name can not be longer than 100 characters']
   },
 });
 

@@ -1,7 +1,9 @@
 # simple-express API to do CRUD ops on people/persons
 
+# Heroku hosting link :: `https://simple-persons-api.herokuapp.com/`
 
-> BASE_URL = `http://localhost:5000/`
+
+> BASE_URL = `https://simple-persons-api.herokuapp.com/`
 
 ## Sample Error Message
 ```

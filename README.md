@@ -69,14 +69,14 @@
 `PUT` `{{ BASE_URL }}` `api/v1/persons`
 <br/>
 > Dont forget to set header `Content-Type: application/json`
-<br/>
+
 > Sample Request Body
 ```
 {
     "name": "Abel Oboth"
 }
 ``` 
-<br/>
+
 > Sample Response
 ```
 {

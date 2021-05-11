@@ -1,6 +1,6 @@
 # simple-express API to do CRUD ops on people/persons
 
-# Heroku hosting link :: `https://simple-persons-api.herokuapp.com/`
+Heroku hosting link is `https://simple-persons-api.herokuapp.com/`  
 
 
 > BASE_URL = `https://simple-persons-api.herokuapp.com/`
